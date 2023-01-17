@@ -72,7 +72,7 @@ struct ContactModel: Codable {
     let contactEmail: String!
     let accountID: Int!
     let pubsubToken: String!
-    let lastActivityAt: String!
+    let lastActivityAt: String?
 
     enum CodingKeys: String, CodingKey {
         case contactID = "id"

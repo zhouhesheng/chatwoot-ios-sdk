@@ -19,7 +19,7 @@ class AllConversationsViewModel: NSObject {
     func createContactApi() {
         if (NetworkReachabilityManager()!.isReachable) {
             //FIXME:- Hardcoded for Testing
-            let createContactParams = CreateContactRequest(identifier: nil, identifier_hash: nil, email: "ramshad@gmail.com", name: "Ramshad", avatar_url: "https://static.vecteezy.com/system/resources/previews/002/275/847/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg", custom_attributes: nil)
+            let createContactParams = CreateContactRequest(identifier: nil, identifier_hash: nil, email: "Xiaoming@gmail.com", name: "Xiaoming", avatar_url: "https://static.vecteezy.com/system/resources/previews/002/275/847/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg", custom_attributes: nil)
             ProgressHUD.show()
             HomeRouter().createContactApi(params: createContactParams) { [ weak self] result in
                 switch result {

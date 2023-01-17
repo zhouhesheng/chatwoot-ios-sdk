@@ -9,7 +9,7 @@
 import Foundation
 
 enum Constants {
-    static let inboxIdentifier = "STep3JLJv44qiqVBc2ueXpix"
+    static let inboxIdentifier = "USoxo44LkKgs96zKcN6bZCkh"
 }
 
 extension Constants {
@@ -17,7 +17,7 @@ extension Constants {
     enum Urls {
         
         enum BaseUrl {
-            static let develop    = "https://develop.chatwoot.com/public/api/v1/inboxes/{inbox_identifier}/"
+            static let develop    = "http://localhost:3000/public/api/v1/inboxes/{inbox_identifier}/"
             static let staging    = "https://staging.chatwoot.com/public/api/v1/inboxes/{inbox_identifier}/"
             static let production = "https://chatwoot.com/public/api/v1/inboxes/{inbox_identifier}/"
         }
@@ -29,7 +29,7 @@ extension Constants {
         }
         
         enum SocketUrl {
-            static let develop    = "wss://develop.chatwoot.com/cable"
+            static let develop    = "ws://localhost:3000/cable"
             static let staging    = "wss://staging.chatwoot.com/cable"
             static let production = "wss://chatwoot.com/cable"
         }

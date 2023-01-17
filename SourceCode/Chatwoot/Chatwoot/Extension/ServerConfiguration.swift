@@ -12,7 +12,7 @@ struct ServerConfig {
         case develop, staging, production
     }
     
-    private static let releaseMode: ReleaseMode = .staging
+    private static let releaseMode: ReleaseMode = .develop
     
     public var baseURL: URL {
         var urlFormatted = ""

@@ -45,7 +45,7 @@ class AllConversationsTableViewCell: UITableViewCell {
         if 0 == conversationsModel.messages.count {
             lblAgent.text = conversationsModel.contact.contactName
             lblMessage.text = Constants.Messages.noMessagesFound
-            lblDate.text = conversationsModel.contact.lastActivityAt.utcToLocal().relativeTime
+            lblDate.text = conversationsModel.contact.lastActivityAt?.utcToLocal().relativeTime
         }
         else {
             let lastMessage: MessageModel = conversationsModel.messages.last!
